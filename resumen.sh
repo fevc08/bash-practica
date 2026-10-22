@@ -1,5 +1,6 @@
 # Script para analizar los archivos CSVs.
 #!/usr/bin/env bash
+# Primero se filtra
 if [ "$#" -eq 0 ]; then
   echo "Uso: $0 archivo.csv" >&2
   exit 1
