@@ -1,4 +1,4 @@
-# Script para analizar los archivos CSVs.
+# Script para analizar los archivos CSVs, pero primero chequea el archivo.
 #!/usr/bin/env bash
 if [ "$#" -eq 0 ]; then
   echo "Uso: $0 archivo.csv" >&2
