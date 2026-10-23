@@ -1,12 +1,12 @@
 # Script: `resumen.sh`
-Este script analiza datos de inventario en archivos CSVs, muestras cuantas filas de datos tiene y en que posición y cual fila termina en ','. Además, cuenta cuantas filas por bodegas hay. Adicionalmente, para evitar reproceso, tiene unos filtros iniciales que indica si se está indicando el archivo a analizar y si el archivo a analizar es un archivo regular.
+Este script analiza datos de inventario en archivos CSVs, muestra cuantas filas de datos tiene y en que posición y cual fila termina en ','. Además, cuenta cuantas filas por bodegas hay. Adicionalmente, para evitar reproceso, tiene unos filtros iniciales que indica si se está indicando el archivo a analizar y si el archivo a analizar es un archivo regular.
 
 ## Requisitos:
 - `Bash`: para poder ejecutar el script
 - `archivo.csv`: requiere que el archivo a analizar sea un CSV para que pueda hacer el análisis.
 
 ## Uso:
-Para utilizar el script se debe escribir el siguiente prompt, donde `inventario.csv` puede ser cualquier archivo CSV.  
+Para utilizar el script se debe escribir el siguiente comando, donde `inventario.csv` puede ser cualquier archivo CSV.  
 ```bash
 bash resumen.sh inventario.csv
 ```
@@ -20,9 +20,9 @@ Filas por Bodegas en inventario.csv:
       3 Bodega C
       3 Bodega B
 ```
-NOTA: se debe revisar la estructura del CSV para que coincida que la segunda columna corresponde a Bodegas, de lo contrario va arrojar información que noi corresponde a esta etiqueta.
+> NOTA: se debe revisar la estructura del CSV para que coincida que la segunda columna corresponde a Bodegas, de lo contrario va arrojar información que no corresponde a esta etiqueta.
 
-Adicionalmente, se puede guardar el resultado y los errores en los archivos correspondientes con este prompt:
+Adicionalmente, se puede guardar el resultado y los errores en los archivos correspondientes con este comando:
 
 ```bash
 bash resumen.sh ~/practica/inventario.csv > reporte.txt 2> errores.txt
@@ -36,8 +36,9 @@ Así, se tendrían los archivos de resultados y el historial de errores.
 
 ## Archivos Ignorados:
 Para evitar que Git siga y los suba los archivos que no queremos en el repositorio, se crea el archivo `.gitignore` con las siguientes reglas:
-```bash
+```plaintxt
 reporte.txt
 errores.txt
-salida/ # Este no se usa por el script, pero se usa para pruebas.
+salida/
 ```
+> `salida/` no es usado por script, pero se usa para pruebas.
