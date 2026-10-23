@@ -6,7 +6,7 @@ Este script analiza datos de inventario en archivos CSVs, muestra cuantas filas 
 - `archivo.csv`: requiere que el archivo a analizar sea un CSV para que pueda hacer el análisis.
 
 ## Uso:
-Para utilizar el script se debe escribir el siguiente comando, donde `inventario.csv` puede ser cualquier archivo CSV.  
+Para utilizar el script se debe escribir el siguiente comando, donde `inventario.csv` puede ser cualquier archivo CSV.
 ```bash
 bash resumen.sh inventario.csv
 ```
@@ -36,9 +36,9 @@ Así, se tendrían los archivos de resultados y el historial de errores.
 
 ## Archivos Ignorados:
 Para evitar que Git siga y los suba los archivos que no queremos en el repositorio, se crea el archivo `.gitignore` con las siguientes reglas:
-```plaintxt
+```text
 reporte.txt
 errores.txt
 salida/
 ```
-> `salida/` no es usado por script, pero se usa para pruebas.
+> `salida/` no es usado por el script, pero se usa para pruebas.
