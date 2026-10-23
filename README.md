@@ -30,9 +30,9 @@ bash resumen.sh ~/practica/inventario.csv > reporte.txt 2> errores.txt
 Así, se tendrían los archivos de resultados y el historial de errores.
 
 ## Códigos de Salida:
-`exit 0`: Cuando el script funciona sin errores
-`exit 1`: Cuando no se escribe el archivo a analizar
-`exit 2`: Se dispara solo si el archivo no es regular o si no existe.
+- `exit 0`: Cuando el script funciona sin errores
+- `exit 1`: Cuando no se escribe el archivo a analizar
+- `exit 2`: Se dispara solo si el archivo no es regular o si no existe.
 
 ## Archivos Ignorados:
 Para evitar que Git siga y los suba los archivos que no queremos en el repositorio, se crea el archivo `.gitignore` con las siguientes reglas:
