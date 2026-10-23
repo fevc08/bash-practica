@@ -15,7 +15,7 @@ Output:
 Fila total de datos: 10
 Filas con cantidad vacía:
 6:2026-10-05,Bodega B,Laptop,
-Filas por Bodegas en /home/usuario/practica/inventario.csv:
+Filas por Bodegas en inventario.csv:
       4 Bodega A
       3 Bodega C
       3 Bodega B
